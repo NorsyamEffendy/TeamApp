@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+<link rel="stylesheet" href="styles/loginPage.css">
+<div class="form">
+    <h1 class="">Edit Staff Information</h1>
+    <div class="form-group break">
+        <form action="/editstaff" method="post">
+            <input type="text" name="fullname"  placeholder="fullname">
+            <input type="text" name="company_email" placeholder="company email">
+            <input type="text" name="emp_id" placeholder="employee id">
+            <input type="text" name="designation" placeholder="designation">
+            <input type="text" name="team" placeholder="team">
+            <input type="text" name="age" placeholder="age">
+            <input type="text" name="dob" placeholder="date of birth">
+            <input type="text" name="date_joined" placeholder="date joined">
+            <input type="text" name="rr_pass" placeholder="RR Pass">
+            <input type="text" name="pass_expiry" placeholder="Pass Expiry">
+            <input type="submit" value="Save Changes">
+            <a href="/dashboard">go back</a>
+        </form>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.form{
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.signup-a{
+    color: white;
+}
+
+.signup-a:hover{
+    color: white;
+}

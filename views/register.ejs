@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+<link rel="stylesheet" href="styles/loginPage.css">
+<div class="form">
+    <h1 class="">SignUp to TeamApp</h1>
+    <div class="form-group break">
+        <form action="/signup" method="post">
+            <label for="username">Username</label>
+            <input name="username" class="form-control" type="text" id="username">
+            <label for="password">Password</label>
+            <input name="password" class="form-control" type="password" id="password">
+            <button class="btn btn-primary mt-3" type="submit">Signup</button>
+        </form>
+        <button class="btn btn-primary mt-3"><a class="signup-a" href="/">Go to login</a></button>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>
