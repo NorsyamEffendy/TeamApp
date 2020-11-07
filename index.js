@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path')
 const app = express();
 const session = require('express-session');
+const port = process.env.PORT || 3000
 
 /* EJS route imports */
 const loginRoute = require('./controllers/login');
@@ -51,5 +52,6 @@ app.post('/createStaff', createStaff);
 
 mongoose.connect(`mongodb+srv://admin:admin619@cluster0.mthwn.mongodb.net/teamapp?retryWrites=true&w=majority`)
                 .then(result => {
-                    app.listen('3000', ()=> console.log("server started"));
+                    app.listen(port, ()=> console.log("server started"));
                 })
+
